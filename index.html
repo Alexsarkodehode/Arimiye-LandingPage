@@ -119,6 +119,46 @@
         margin-top: 1rem;
       }
 
+      /* DOWNLOAD BUTTON */
+      .btn-download {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        background: linear-gradient(135deg, #C17F24 0%, #E8A93C 50%, #2ECC71 100%);
+        color: #1A1A1A;
+        font-weight: 900;
+        text-decoration: none;
+        border-radius: 14px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 4px 24px rgba(193,127,36,0.35);
+        min-width: 220px;
+      }
+      .btn-download:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 32px rgba(193,127,36,0.5);
+      }
+      .btn-download:active { transform: translateY(0); }
+      .btn-download-icon {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+      }
+      .btn-download-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.2;
+      }
+      .btn-download-text .small { font-size: 0.72rem; font-weight: 600; opacity: 0.85; }
+      .btn-download-text .big  { font-size: 1.15rem; font-weight: 900; letter-spacing: -0.01em; }
+
+      @media (max-width: 600px) {
+        .btn-download { width: 100%; justify-content: center; }
+      }
+
       /* TRUST BAR */
       .trust {
         display: flex;
@@ -271,7 +311,7 @@
         <a href="#pricing">Pricing</a>
         <a href="https://wa.me/4740951971" target="_blank">Contact</a>
       </div>
-      <a class="btn-primary" href="https://github.com/Alexsarkodehode/Arimiye/releases/latest/download/arimiye.apk" download style="padding:0.6rem 1.4rem;font-size:0.9rem;">Download APK</a>
+      <a class="btn-primary" href="https://expo.dev/artifacts/eas/iHeTsLZGj115qYXzNA9Bcr.apk" download="arimiye.apk" style="padding:0.6rem 1.4rem;font-size:0.9rem;">⬇ Download APK</a>
     </nav>
 
     <!-- HERO -->
@@ -281,7 +321,15 @@
       <p>Manage sales, stock, amaah, and expenses — in Somali. Works offline. Supports Zaad, EVC, and eDahab.</p>
       <p class="hero-somali">"Arimiye" — Kii maamula oo nidaamiya.</p>
       <div class="hero-cta">
-        <a class="btn-primary" href="https://github.com/Alexsarkodehode/Arimiye/releases/latest/download/arimiye.apk" download>⬇ Download APK — Free</a>
+        <a class="btn-download" href="https://expo.dev/artifacts/eas/iHeTsLZGj115qYXzNA9Bcr.apk" download="arimiye.apk">
+          <svg class="btn-download-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.523 15.341A5 5 0 0 0 12 11a5 5 0 0 0-5.523 4.341A3 3 0 0 0 9 21h6a3 3 0 0 0 2.523-5.659ZM12 3a1 1 0 0 1 1 1v6.586l1.293-1.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L11 10.586V4a1 1 0 0 1 1-1Z"/>
+          </svg>
+          <span class="btn-download-text">
+            <span class="small">Free Download · Android</span>
+            <span class="big">Download Arimiye</span>
+          </span>
+        </a>
         <a class="btn-secondary" href="https://wa.me/4740951971" target="_blank">WhatsApp Us</a>
       </div>
       <p class="hero-note">Android · Works offline · No setup needed</p>
@@ -388,7 +436,15 @@
     <div class="cta-section">
       <h2>Ready to run your business smarter?</h2>
       <p>Download Arimiye free. No account needed to get started.</p>
-      <a class="btn-primary" href="https://github.com/Alexsarkodehode/Arimiye/releases/latest/download/arimiye.apk" download style="font-size:1.1rem;padding:1rem 2.5rem;">⬇ Download APK — Free</a>
+      <a class="btn-download" href="https://expo.dev/artifacts/eas/iHeTsLZGj115qYXzNA9Bcr.apk" download="arimiye.apk" style="margin:0 auto;">
+        <svg class="btn-download-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.523 15.341A5 5 0 0 0 12 11a5 5 0 0 0-5.523 4.341A3 3 0 0 0 9 21h6a3 3 0 0 0 2.523-5.659ZM12 3a1 1 0 0 1 1 1v6.586l1.293-1.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L11 10.586V4a1 1 0 0 1 1-1Z"/>
+        </svg>
+        <span class="btn-download-text">
+          <span class="small">Free Download · Android</span>
+          <span class="big">Download Arimiye</span>
+        </span>
+      </a>
       <p style="margin-top:1.2rem;font-size:0.85rem;color:#9CA3AF;">Questions? <a href="https://wa.me/4740951971" target="_blank" style="color:#E8A93C;">WhatsApp us</a></p>
     </div>
 
@@ -398,7 +454,7 @@
       <p>Simple & powerful POS app for Somaliland and the Somali diaspora.</p>
       <div class="footer-links">
         <a href="https://wa.me/4740951971" target="_blank">WhatsApp</a>
-        <a href="https://github.com/Alexsarkodehode/Arimiye/releases/latest/download/arimiye.apk" download>Download APK</a>
+        <a href="https://expo.dev/artifacts/eas/iHeTsLZGj115qYXzNA9Bcr.apk" download="arimiye.apk">Download APK</a>
       </div>
       <p style="margin-top:1.2rem;">© 2025 Arimiye. Built with ❤️ for Somali businesses.</p>
     </footer>
