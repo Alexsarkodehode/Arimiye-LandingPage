@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="so">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Arimiye – Somali POS App for Smart Business Owners</title>
-    <meta name="description" content="Arimiye is a simple, powerful POS app for Somali business owners. Works offline. Supports Zaad, EVC, eDahab. Free to start." />
+    <title>Arimiye – App-ka Ganacsiga Soomaalida</title>
+    <meta name="description" content="Arimiye waa app fudud oo aad ku maamusho iibka, alaabta iyo amaahda dukaankaaga. Internet la'aan ayuu ku shaqeeyaa." />
     <meta name="keywords" content="Somali POS app, Somaliland retail system, App ganacsiga Somaliland, Arimiye app, Mobile money POS Zaad EVC, Somali business management app, Point of sale Horn of Africa" />
     <style>
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -34,14 +34,6 @@
         background-clip: text;
       }
       .logo span { font-weight: 300; font-style: normal; }
-      nav a {
-        color: #9CA3AF;
-        text-decoration: none;
-        font-size: 0.95rem;
-        transition: color 0.2s;
-      }
-      nav a:hover { color: #E8A93C; }
-      .nav-links { display: flex; gap: 2rem; }
 
       /* HERO */
       .hero {
@@ -78,13 +70,7 @@
         font-size: 1.15rem;
         color: #9CA3AF;
         max-width: 540px;
-        margin: 0 auto 2rem;
-      }
-      .hero-somali {
-        font-size: 0.95rem;
-        color: #9CA3AF;
-        margin-bottom: 2.5rem;
-        font-style: italic;
+        margin: 0 auto 2.5rem;
       }
       .btn-primary {
         display: inline-block;
@@ -98,109 +84,20 @@
         transition: opacity 0.2s, transform 0.2s;
       }
       .btn-primary:hover { opacity: 0.9; transform: translateY(-2px); }
-      .btn-secondary {
-        display: inline-block;
-        padding: 0.9rem 2.2rem;
-        background: transparent;
-        color: #E8A93C;
-        font-weight: 700;
-        font-size: 1rem;
-        text-decoration: none;
-        border-radius: 10px;
-        border: 1.5px solid #C17F24;
-        margin-left: 1rem;
-        transition: background 0.2s;
-      }
-      .btn-secondary:hover { background: #2C2C2C; }
       .hero-cta { margin-bottom: 1rem; }
-      .hero-note {
+      .hero .hero-note {
         font-size: 0.82rem;
         color: #9CA3AF;
-        margin-top: 1rem;
+        margin: 1rem auto 0;
       }
-
-      /* DOWNLOAD BUTTON */
-      .btn-download {
-        display: inline-flex;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem 2rem;
-        background: linear-gradient(135deg, #C17F24 0%, #E8A93C 50%, #2ECC71 100%);
-        color: #1A1A1A;
-        font-weight: 900;
-        text-decoration: none;
-        border-radius: 14px;
-        border: none;
-        cursor: pointer;
-        transition: transform 0.2s, box-shadow 0.2s;
-        box-shadow: 0 4px 24px rgba(193,127,36,0.35);
-        min-width: 220px;
-      }
-      .btn-download:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 32px rgba(193,127,36,0.5);
-      }
-      .btn-download:active { transform: translateY(0); }
-      .btn-download-icon {
-        width: 36px;
-        height: 36px;
-        flex-shrink: 0;
-      }
-      .btn-download-text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        line-height: 1.2;
-      }
-      .btn-download-text .small { font-size: 0.72rem; font-weight: 600; opacity: 0.85; }
-      .btn-download-text .big  { font-size: 1.15rem; font-weight: 900; letter-spacing: -0.01em; }
-
-      @media (max-width: 600px) {
-        .btn-download { width: 100%; justify-content: center; }
-      }
-
-      /* TRUST BAR */
-      .trust {
-        display: flex;
-        justify-content: center;
-        gap: 2.5rem;
-        flex-wrap: wrap;
-        padding: 2rem 1.5rem;
-        border-top: 1px solid #2C2C2C;
-        border-bottom: 1px solid #2C2C2C;
-      }
-      .trust-item {
-        text-align: center;
-      }
-      .trust-item .num {
-        font-size: 1.6rem;
-        font-weight: 900;
-        background: linear-gradient(90deg, #C17F24, #E8A93C);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-      .trust-item .label { font-size: 0.82rem; color: #9CA3AF; }
 
       /* SECTION */
-      section { padding: 4rem 1.5rem; max-width: 1000px; margin: 0 auto; }
-      .section-title {
-        text-align: center;
-        font-size: clamp(1.6rem, 4vw, 2.2rem);
-        font-weight: 900;
-        margin-bottom: 0.6rem;
-      }
-      .section-sub {
-        text-align: center;
-        color: #9CA3AF;
-        margin-bottom: 3rem;
-        font-size: 1rem;
-      }
+      section { padding: 1rem 1.5rem 4rem; max-width: 1000px; margin: 0 auto; }
 
       /* FEATURES GRID */
       .features-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 1.2rem;
       }
       .feature-card {
@@ -212,68 +109,10 @@
       }
       .feature-card:hover { border-color: #C17F24; }
       .feature-icon { font-size: 1.8rem; margin-bottom: 0.8rem; }
-      .feature-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
-      .feature-card p { font-size: 0.88rem; color: #9CA3AF; }
+      .feature-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem; }
+      .feature-card p { font-size: 0.95rem; color: #9CA3AF; }
 
-      /* PRICING */
-      .pricing-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-        max-width: 680px;
-        margin: 0 auto;
-      }
-      .pricing-card {
-        background: #2C2C2C;
-        border-radius: 16px;
-        padding: 2rem;
-        border: 1px solid #333;
-      }
-      .pricing-card.pro {
-        border-color: #C17F24;
-        position: relative;
-      }
-      .pro-badge {
-        position: absolute;
-        top: -12px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: linear-gradient(90deg, #C17F24, #E8A93C);
-        color: #1A1A1A;
-        font-size: 0.75rem;
-        font-weight: 800;
-        padding: 0.25rem 1rem;
-        border-radius: 999px;
-      }
-      .pricing-card h3 { font-size: 1.2rem; font-weight: 800; margin-bottom: 0.3rem; }
-      .pricing-card .price {
-        font-size: 2rem;
-        font-weight: 900;
-        margin-bottom: 1.2rem;
-        background: linear-gradient(90deg, #C17F24, #E8A93C);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-      .pricing-card .price span { font-size: 1rem; font-weight: 400; color: #9CA3AF; -webkit-text-fill-color: #9CA3AF; }
-      .pricing-card ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
-      .pricing-card ul li { font-size: 0.9rem; color: #9CA3AF; display: flex; align-items: center; gap: 0.5rem; }
-      .pricing-card ul li::before { content: "✓"; color: #2ECC71; font-weight: 700; }
-
-      /* OFFLINE BANNER */
-      .offline-banner {
-        background: #2C2C2C;
-        border: 1px solid #C17F24;
-        border-radius: 16px;
-        padding: 2.5rem;
-        text-align: center;
-        max-width: 600px;
-        margin: 0 auto;
-      }
-      .offline-banner h2 { font-size: 1.6rem; font-weight: 900; margin-bottom: 0.6rem; }
-      .offline-banner p { color: #9CA3AF; font-size: 0.95rem; }
-
-      /* DOWNLOAD CTA */
+      /* CONTACT CTA */
       .cta-section {
         text-align: center;
         padding: 5rem 1.5rem;
@@ -293,12 +132,6 @@
         border-top: 1px solid #2C2C2C;
       }
       footer a { color: #E8A93C; text-decoration: none; }
-      .footer-links { display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; flex-wrap: wrap; }
-
-      @media (max-width: 600px) {
-        .nav-links { display: none; }
-        .btn-secondary { margin-left: 0; margin-top: 0.8rem; display: block; text-align: center; }
-      }
     </style>
   </head>
   <body>
@@ -306,157 +139,53 @@
     <!-- NAV -->
     <nav>
       <div class="logo">A<span>rimiye</span></div>
-      <div class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="https://wa.me/4740951971" target="_blank">Contact</a>
-      </div>
-      <a class="btn-primary" href="https://expo.dev/artifacts/eas/iHeTsLZGj115qYXzNA9Bcr.apk" download="arimiye.apk" style="padding:0.6rem 1.4rem;font-size:0.9rem;">⬇ Download APK</a>
+      <a class="btn-primary" href="https://wa.me/4740951971" target="_blank" style="padding:0.6rem 1.4rem;font-size:0.9rem;">WhatsApp</a>
     </nav>
 
     <!-- HERO -->
     <div class="hero">
-      <div class="badge">🇸🇴 Built for Somali Businesses</div>
-      <h1>The POS App <span class="gold">Somali Businesses</span> Actually Need</h1>
-      <p>Manage sales, stock, amaah, and expenses — in Somali. Works offline. Supports Zaad, EVC, and eDahab.</p>
-      <p class="hero-somali">"Arimiye" — Kii maamula oo nidaamiya.</p>
+      <div class="badge">🇸🇴 Loogu talagalay ganacsatada Soomaaliyeed</div>
+      <h1>Ganacsigaaga <span class="gold">si fudud</span> u maamul</h1>
+      <p>Arimiye waa app aad ku maamusho iibka, alaabta iyo amaahda dukaankaaga.</p>
       <div class="hero-cta">
-        <a class="btn-download" href="https://expo.dev/artifacts/eas/iHeTsLZGj115qYXzNA9Bcr.apk" download="arimiye.apk">
-          <svg class="btn-download-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M17.523 15.341A5 5 0 0 0 12 11a5 5 0 0 0-5.523 4.341A3 3 0 0 0 9 21h6a3 3 0 0 0 2.523-5.659ZM12 3a1 1 0 0 1 1 1v6.586l1.293-1.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L11 10.586V4a1 1 0 0 1 1-1Z"/>
-          </svg>
-          <span class="btn-download-text">
-            <span class="small">Free Download · Android</span>
-            <span class="big">Download Arimiye</span>
-          </span>
-        </a>
-        <a class="btn-secondary" href="https://wa.me/4740951971" target="_blank">WhatsApp Us</a>
+        <a class="btn-primary" href="https://wa.me/4740951971" target="_blank">WhatsApp nagala soo xiriir</a>
       </div>
-      <p class="hero-note">Android · Works offline · No setup needed</p>
-    </div>
-
-    <!-- TRUST BAR -->
-    <div class="trust">
-      <div class="trust-item"><div class="num">100%</div><div class="label">Offline capable</div></div>
-      <div class="trust-item"><div class="num">4</div><div class="label">Languages supported</div></div>
-      <div class="trust-item"><div class="num">Free</div><div class="label">To get started</div></div>
-      <div class="trust-item"><div class="num">Zaad</div><div class="label">EVC · eDahab · Amaah</div></div>
+      <p class="hero-note">Internet la'aan ayuu ku shaqeeyaa</p>
     </div>
 
     <!-- FEATURES -->
-    <section id="features">
-      <p class="section-title">Everything your shop needs</p>
-      <p class="section-sub">Built around how Somali businesses actually work</p>
+    <section>
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">🧾</div>
-          <h3>Sales Tracking</h3>
-          <p>Record sales with cash, Zaad, EVC, eDahab, or amaah. Fast checkout for busy shops.</p>
+          <h3>Iibka</h3>
+          <p>Diiwaangeli iib kasta — lacag caddaan ah, Zaad, EVC ama eDahab.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">📦</div>
-          <h3>Inventory Management</h3>
-          <p>Track your stock in real time. Get alerts when items are running low.</p>
+          <h3>Alaabta</h3>
+          <p>Mar kasta ogow alaabta kuu hartay.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🤝</div>
-          <h3>Amaah / Credit Tracking</h3>
-          <p>Know exactly who owes you and how much. No more forgotten debts.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">👥</div>
-          <h3>Customer Management</h3>
-          <p>Keep records of your customers and their purchase history.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💸</div>
-          <h3>Expense Tracking</h3>
-          <p>Log and categorise your business expenses to see where your money goes.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📊</div>
-          <h3>Reports</h3>
-          <p>Daily summaries and revenue breakdowns by payment method. Know your numbers.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💬</div>
-          <h3>WhatsApp Receipts</h3>
-          <p>Share receipts directly via WhatsApp — your customers love it.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🔒</div>
-          <h3>Staff Management</h3>
-          <p>Add staff with PIN access and control exactly what they can see and do.</p>
+          <h3>Amaahda</h3>
+          <p>Ogow cidda aad amaah ku leedahay iyo inta ay tahay.</p>
         </div>
       </div>
     </section>
 
-    <!-- OFFLINE BANNER -->
-    <section style="padding: 2rem 1.5rem;">
-      <div class="offline-banner">
-        <h2>📡 Works Without Internet</h2>
-        <p>No WiFi? No problem. Arimiye is built offline-first — your data stays on your device and everything works whether you have internet or not.</p>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing">
-      <p class="section-title">Simple Pricing</p>
-      <p class="section-sub">Start free. Upgrade when you're ready.</p>
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <h3>Free</h3>
-          <div class="price">$0 <span>/ forever</span></div>
-          <ul>
-            <li>Sales tracking</li>
-            <li>Inventory management</li>
-            <li>Customer records</li>
-            <li>Expense tracking</li>
-            <li>Basic reports</li>
-            <li>WhatsApp receipts</li>
-          </ul>
-        </div>
-        <div class="pricing-card pro">
-          <div class="pro-badge">PRO</div>
-          <h3>Pro</h3>
-          <div class="price">$15 <span>/ month</span></div>
-          <ul>
-            <li>Everything in Free</li>
-            <li>Discounts & promotions</li>
-            <li>Voice search</li>
-            <li>Advanced reports</li>
-            <li>Debt / amaah tracking</li>
-            <li>Staff roles & permissions</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- DOWNLOAD CTA -->
+    <!-- CONTACT CTA -->
     <div class="cta-section">
-      <h2>Ready to run your business smarter?</h2>
-      <p>Download Arimiye free. No account needed to get started.</p>
-      <a class="btn-download" href="https://expo.dev/artifacts/eas/iHeTsLZGj115qYXzNA9Bcr.apk" download="arimiye.apk" style="margin:0 auto;">
-        <svg class="btn-download-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M17.523 15.341A5 5 0 0 0 12 11a5 5 0 0 0-5.523 4.341A3 3 0 0 0 9 21h6a3 3 0 0 0 2.523-5.659ZM12 3a1 1 0 0 1 1 1v6.586l1.293-1.293a1 1 0 1 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 1 1 1.414-1.414L11 10.586V4a1 1 0 0 1 1-1Z"/>
-        </svg>
-        <span class="btn-download-text">
-          <span class="small">Free Download · Android</span>
-          <span class="big">Download Arimiye</span>
-        </span>
-      </a>
-      <p style="margin-top:1.2rem;font-size:0.85rem;color:#9CA3AF;">Questions? <a href="https://wa.me/4740951971" target="_blank" style="color:#E8A93C;">WhatsApp us</a></p>
+      <h2>Nala soo xiriir</h2>
+      <p>Haddii aad Arimiye rabto ama aad su'aal qabto, WhatsApp noogu soo qor.</p>
+      <a class="btn-primary" href="https://wa.me/4740951971" target="_blank">WhatsApp</a>
     </div>
 
     <!-- FOOTER -->
     <footer>
       <div class="logo" style="font-size:1.3rem;display:inline-block;margin-bottom:0.5rem;">A<span style="font-weight:300;font-style:normal;background:none;-webkit-text-fill-color:#9CA3AF;">rimiye</span></div>
-      <p>Simple & powerful POS app for Somaliland and the Somali diaspora.</p>
-      <div class="footer-links">
-        <a href="https://wa.me/4740951971" target="_blank">WhatsApp</a>
-        <a href="https://expo.dev/artifacts/eas/iHeTsLZGj115qYXzNA9Bcr.apk" download="arimiye.apk">Download APK</a>
-      </div>
-      <p style="margin-top:1.2rem;">© 2025 Arimiye. Built with ❤️ for Somali businesses.</p>
+      <p>"Arimiye" — Kii maamula oo nidaamiya.</p>
+      <p style="margin-top:1.2rem;">© 2025 Arimiye</p>
     </footer>
 
   </body>
